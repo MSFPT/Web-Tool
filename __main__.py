@@ -4,14 +4,7 @@
 r'''
 WEB-TOOL/src
 ~~~~~~~~~~~~~~
-Coded By c0mmand5r & MsfPt
-
- - GitHub: https://github.com/c0mmand5r
-
- - Twitter: https://twitter.com/c0mmand5r
-
- - GitHub: https://github.com/msfpt
-
+Coded By https://github.com/msfpt
 '''
 
 from src import *
@@ -21,7 +14,7 @@ import time
 import os
 
 try:
-    from colorama import Fore, Back, Style
+    from colorama import Fore, Style
 except ImportError as err:
     os.system("pip install colorama")
     from colorama import Fore, Style
@@ -36,7 +29,7 @@ setTitle("WEB-TOOL")
 def clear(msg: str = None) -> 0:
   os.system(['clear', 'cls'][os.name == 'nt'])
   if(msg != None):
-      print(msg)
+    print(msg)
 
 clear()
 
@@ -51,7 +44,6 @@ def banner():
     | |/ |/ / /___/ /_/ /    / / / /_/ / /_/ / /___
     |__/|__/_____/_____/    /_/  \____/\____/_____/
     
-        {Back.RED + Fore.WHITE}<( Coded By c0mmand5r & MsfPt )>{Style.RESET_ALL}
        {Fore.RESET}
             {Fore.CYAN}[{Fore.LIGHTCYAN_EX}1{Fore.CYAN}]{Fore.LIGHTGREEN_EX} Ping Tool
             {Fore.CYAN}[{Fore.LIGHTCYAN_EX}2{Fore.CYAN}]{Fore.LIGHTGREEN_EX} Server whois
